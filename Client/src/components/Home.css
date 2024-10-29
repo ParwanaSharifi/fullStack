@@ -1,0 +1,58 @@
+/* Home */
+.transition-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transition-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+/*style of FetchRecipeById*/
+.recipe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.recipe-container:hover {
+  border-color: orange;
+}
+
+.recipe-image {
+  border: 2px solid yellow;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.recipe-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.recipe-instructions {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.recipe-ingredients {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+/*footer styles*/
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
