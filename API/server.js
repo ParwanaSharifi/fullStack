@@ -17,10 +17,10 @@ app.use(
 );
 
 // userRouter
-app.use("/api", userRouter); // Changed path
+app.use("/api", userRouter); 
 
 // recipeRouter
-app.use("/api", recipeRouter); // Changed path
+app.use("/api", recipeRouter); 
 
 mongoose
   .connect(
@@ -36,6 +36,4 @@ const port = 3000;
 app.listen(port, () => console.log(`server is running on port ${port}`));
 
 
-app.get("/", (req, res) => {
-  res.send("Welcome to the Food Recipe API!");
-});
+
