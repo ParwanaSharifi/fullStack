@@ -14,8 +14,14 @@
   align-items: center;
   padding: 20px;
   transition: border-color 0.3s ease;
+  
 }
-
+@media (max-width: 600px) {
+    .recipe-container {
+        display: block;
+        padding: 10px;
+    }
+}
 .recipe-container:hover {
   border-color: orange;
 }
