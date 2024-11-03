@@ -1,9 +1,10 @@
 import express from "express";
 import mongoose from "mongoose";
-import bodyParser from "express";
+import bodyParser from "body-parser";
 import userRouter from "./routes/user.js";
 import recipeRouter from "./routes/recipe.js";
 import cors from "cors";
+
 const app = express();
 
 app.use(bodyParser.json());
@@ -16,10 +17,10 @@ app.use(
 );
 
 // userRouter
-app.use("/api", userRouter);
+app.use("/api/user", userRouter); // Changed path
 
 // recipeRouter
-app.use("/api", recipeRouter);
+app.use("/api/recipe", recipeRouter); // Changed path
 
 mongoose
   .connect(
@@ -33,3 +34,8 @@ mongoose
 
 const port = 3000;
 app.listen(port, () => console.log(`server is running on port ${port}`));
+
+
+app.get("/", (req, res) => {
+  res.send("Welcome to the Food Recipe API!");
+});
