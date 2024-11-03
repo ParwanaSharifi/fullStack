@@ -3,7 +3,7 @@ import { AppContext } from "./App_Context";
 import axios from "axios";
 
 const App_State = (props) => {
-  const url = "https://fullstack-api-kqim.onrender.com";
+  const url = "http://localhost:3000/api";
   const [token, setToken] = useState("");
   const [recipe, setrecipe] = useState([]);
   const [savedRecipe, setsavedRecipe] = useState([]);
