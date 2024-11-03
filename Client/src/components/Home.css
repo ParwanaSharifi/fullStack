@@ -16,7 +16,7 @@
   transition: border-color 0.3s ease;
   
 }
-@media (max-width: 600px) {
+@media (max-width: 640px) {
     .recipe-container {
         display: block;
         padding: 10px;
