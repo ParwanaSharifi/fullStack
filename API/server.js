@@ -17,10 +17,10 @@ app.use(
 );
 
 // userRouter
-app.use("/api/user", userRouter); // Changed path
+app.use("/api", userRouter); // Changed path
 
 // recipeRouter
-app.use("/api/recipe", recipeRouter); // Changed path
+app.use("/api", recipeRouter); // Changed path
 
 mongoose
   .connect(
